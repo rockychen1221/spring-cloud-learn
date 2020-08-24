@@ -2,6 +2,9 @@ server:
   port: 7103
 
 spring:
+  profiles:
+    #指定开发环境
+    active: dev
   application:
     name: admin-server #在Nacos Server注册的服务名
   cloud:
