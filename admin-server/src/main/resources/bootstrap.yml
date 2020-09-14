@@ -1,0 +1,22 @@
+server:
+  port: 7103
+
+spring:
+  profiles:
+    #指定开发环境
+    active: dev
+  application:
+    name: admin-server-chen #在Nacos Server注册的服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,22 @@
+server:
+  port: 7107
+
+spring:
+  profiles:
+    #指定开发环境
+    active: dev
+  application:
+    name: user-server-chen
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

@@ -25,7 +25,7 @@ public class NacosConfigController {
 
     @RequestMapping("/get")
     public boolean get() {
-        log.info("invoked  = " +useLocalCache);
+        log.info("invoked  = " + useLocalCache);
         return useLocalCache;
     }
 

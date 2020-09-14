@@ -1,16 +1,16 @@
 server:
-  port: 7103
+  port: 7108
 
 spring:
   profiles:
     #指定开发环境
     active: dev
   application:
-    name: admin-server-chen #在Nacos Server注册的服务名
+    name: gateway-server-chen
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.1.50:8848
+        server-addr: 127.0.0.1:8848
 
 management:
   endpoints:
